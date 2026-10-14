@@ -14,11 +14,12 @@ public class Usuario {
     private Integer idUsuarios;
 
 
-    @Size(max = 45)
+    @Size(max = 50)
     @NotNull
     @Column(name = "password", nullable = false, length = 50)
     private String password;
 
+    @Size(max = 50)
     @NotNull
     @Column(name = "nombreUsuario", nullable = false)
     private String nombreUsuario;
