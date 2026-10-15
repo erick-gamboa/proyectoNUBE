@@ -3,6 +3,7 @@ package mx.desarrollo.persistence.dao;
 import jakarta.persistence.EntityManager;
 import mx.desarrollo.entity.Usuario;
 import mx.desarrollo.persistence.persistence.AbstractDAO;
+import java.util.List;
 
 public class UsuarioDAO extends AbstractDAO<Usuario> {
 

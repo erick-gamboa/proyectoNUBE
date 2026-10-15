@@ -1,18 +1,19 @@
 package mx.desarrollo.persistence.dao;
 
 import jakarta.persistence.EntityManager;
-import mx.desarrollo.entity.Asignacion;
+import mx.desarrollo.entity.TicketCompra;
 import mx.desarrollo.persistence.persistence.AbstractDAO;
 
-public class AsignacionDAO extends AbstractDAO<Asignacion> {
+import java.util.List;
 
+
+public class TicketCompraDAO extends AbstractDAO<TicketCompra> {
     private final EntityManager entityManager;
 
-    public AsignacionDAO(EntityManager em) {
-        super(Asignacion.class);
+    public TicketCompraDAO(EntityManager em) {
+        super(TicketCompra.class);
         this.entityManager = em;
     }
-
     @Override
     public EntityManager getEntityManager() {
         return entityManager;
